@@ -10,7 +10,7 @@ $request = new Request();
 $response = new Response();
 $router = new Router($request, $response);
 
-$router->get('/', [HomeController::class, "home"]);
+$router->get('/', [HomeController::class, "index"]);
 
 
 $router->exec();

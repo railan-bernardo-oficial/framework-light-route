@@ -3,9 +3,20 @@
 namespace App\Controllers;
 
 use App\Core\Request;
+use App\Core\View;
 
 class HomeController{
 
-    // metodos para o controlador home
+    protected View $view;
+
+    public function __construct()
+    {
+        $this->view = new View();
+    }
+
+   public function index(){
+     $this->view->render('/site/pages/home/index');
+   }
+
 
 }
