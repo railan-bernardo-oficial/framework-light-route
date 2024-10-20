@@ -51,7 +51,7 @@ Aqui está um exemplo simples de como utilizar o LightRoute:
 
 1 Abra o arquivo web.php no diretório ``` app/routes ```
 
-```bash
+```php
   <?php
 
         use App\Core\Router;
